@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main()
+{
+  int num,num1,c;
+  c=0;
+  srand(time(NULL));
+  num=rand() % 100 + 1;
+  do {
+    cout<<"Type a number between 1 and 100"<<endl;
+    cin >>num1;
+    if (num1<num) {
+      cout<<num1<<" is too low"<<endl;
+    } else if (num1>num) {
+    cout<<num1<< " is too high"<<endl;
+    }
+    else
+    {
+      cout<<"Congratulations"<<endl;
+    }
+    c=c+1;
+  } while(num1!=num);
+  cout<<"You tried: "<<c<<" times"<<endl;
+
+  return 0;
+}
