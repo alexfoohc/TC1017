@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int num1, num2, sum;
+  sum=0;
+  cout <<"This program calculate the sum of two integers in the range you provide"<< endl;
+  cout <<"Type the lower bound"<< endl;
+  cin >>num1;
+  cout <<"Type the upper bound"<< endl;
+  cin >>num2;
+  if (num1<=num2){
+
+    do {
+      num1=num1+1;
+      sum=sum+num1;
+    }while(num1!=num2);
+    cout <<"The sum of the numbers is: "<<sum<< endl;}
+
+  else{
+    cout <<"You typed the numbers in wrong order, please try again"<< endl;
+  }
+
+  return 0;
+}
