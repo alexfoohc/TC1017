@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  int a,c, prod,b,fac;
+  char answ;
+  c=1;
+  b=1;
+  prod=1;
+  do {
+    cout <<"Type a non-negative integer"<< endl;
+    cin >> a;
+    do{
+      c=c+1;
+      prod=prod*(b+1);
+      b=b+1;
+      fac=prod;
+    }while (c!=a);
+    cout <<"The factorial of the number is: "<<fac<<endl;
+    cout <<"Would you like to type another number? y/n"<<endl;
+    cin >> answ;
+
+  } while(answ=='y');
+
+}
