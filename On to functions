@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+int suma(int a, int b)
+{
+  int c;
+  c=a+b;
+  return c;
+}
+int difference (int a, int b)
+{
+  int e;
+  e=a-b;
+  return e;
+}
+int product (int a, int b)
+{
+  int f;
+  f=a*b;
+  return f;
+}
+int division (int a, int b)
+{
+  int g;
+  g=a/b;
+  return g;
+}
+int remainder (int a, int b)
+{
+  int h;
+  h=a%b;
+  return h;
+}
+int main()
+{
+  int a,b,d,e,f,g,h;
+  cout <<"Type an integer number"<< endl;
+  cin >>a;
+  cout <<"Type an integer number"<< endl;
+  cin >>b;
+  d=suma (a,b);
+  e=difference(a,b);
+  f= product (a,b);
+  g= division(a,b);
+  h= remainder (a,b);
+  cout <<"The addition of the two numbers is: "<<d<<endl;
+  cout <<"The difference of the two numbers is: "<<e<<endl;
+  cout <<"The product of the two numbers is: "<<f<<endl;
+  cout <<"The division of the two numbers is: "<<g<<endl;
+  cout <<"The remainder of the division is: "<<h<<endl;
+}
