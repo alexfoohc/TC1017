@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
   int num1, num2, sum;
-  sum=0;
+  sum=1;
   cout <<"This program calculate the sum of two integers in the range you provide"<< endl;
   cout <<"Type the lower bound"<< endl;
   cin >>num1;
