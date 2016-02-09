@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+  float num1, num2;
+  cout <<"Type a number"<<endl;
+  cin >>num1;
+  cout <<"Type another number"<<endl;
+  cin >>num2;
+  cout <<"The addition of the two number is: "<<num1+num2<<endl;
+  cout <<"The product of the two numbers is: "<<num1*num2<<endl;
+  cout <<"The substraction of the two numbers is: "<<num1-num2<<endl;
+  cout <<"The division of the two numbers is: "<<num1/num2<<endl;
+  return 0;
+}
