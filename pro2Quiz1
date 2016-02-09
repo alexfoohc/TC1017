@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int num1, num2;
+  cout <<"Type a integer number"<< endl;
+  cin >>num1;
+  cout <<"Type another integer number"<< endl;
+  cin >>num2;
+  cout <<"The product of the two numbers is: "<<num1*num2<<endl;
+  cout <<"The division of the two numbers is: "<<num1/num2<<endl;
+  cout <<"The remainder from the division of the two numbers is: "<<num1%num2<<endl;
+  return 0;
+}
