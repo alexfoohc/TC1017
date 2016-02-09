@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main () {
+  float num1, num2, v;
+  cout <<"Type a value for a radius"<< endl;
+  cin >>num1;
+  cout <<"Type a value for the height"<< endl;
+  cin >>num2;
+  v=M_PI*(num1*num1)*num2;
+  cout <<"The volume of a cylinder is: "<<v<< endl;
+  return 0;
+}
