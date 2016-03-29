@@ -1,0 +1,36 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int find_word(string word, string sample){
+  std::string line;
+  int count;
+  ifstream myfile(sample);
+  if (myfile.is_open())
+  {
+    count=0;
+
+    while(getline(myfile,line)){
+      if(line.compare(word)==0){
+        count++;
+      }
+    }
+    myfile.close();
+  }
+    else {
+  cout<<"Unable to open file"<<endl;
+  }
+  cout<<"The occurrences of the word you typed are: "<<count<<endl;
+  return count;
+}
+
+int main(){
+  string word, sample, line;
+  int count;
+  cout<<"Please type a word which is in your file"<<endl;
+  cin>>word;
+  cout<<"Now, please type the name of your file with the extension (Example: Hello.txt, make sure it is a text file)"<<endl;
+  cin>>sample;
+  find_word(word, sample);
+  return 0;
+}
